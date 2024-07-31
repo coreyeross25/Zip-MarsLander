@@ -6,10 +6,8 @@ public class OnBoardComputer implements BurnStream {
         int burn = 0;
         double speed = status.getVelocity();
         burn = (int) ((speed * speed) / (2. * status.getAltitude()));
-        if (speed == 0 && status.getAltitude() == 1) {
+        if(speed == 0 && status.getAltitude() == 1){
             burn = -1;
-
-
         }
         System.out.println(100 + burn); /*hack!*/
         return 100 + burn;

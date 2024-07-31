@@ -19,6 +19,11 @@ public class DescentEvent {
 
     public int getAltitude() {
         return this.Altitude;
+
+    }
+
+    public void setStatus(int Status) {
+        this.Status = Status;
     }
     public int getStatus() {
         return this.Status;
